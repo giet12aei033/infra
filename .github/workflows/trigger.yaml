@@ -2,7 +2,8 @@ name: On Repository Dispatch
 
 on:
   repository_dispatch:
-    types: [on-demand-test] # Must match the event_type in the triggering workflow
+    types: 
+      - on-demand-test # Must match the event_type in the triggering workflow
 
 jobs:
   deploy:
