@@ -11,6 +11,9 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Access Passed Folder Variable
+        run: echo "The folder with changes is: ${{ github.event.client_payload.folder }}"
+
       # Add additional steps for deployment or other actions here
       - name: Print Trigger Message
         run: echo "Triggered by repository dispatch event from another repository"
