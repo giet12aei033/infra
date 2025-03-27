@@ -1,0 +1,18 @@
+jobs:
+  kics-job:
+    runs-on: ubuntu:latest
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
+    name: kics-scan
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run KICS Scan and Upload SARIF
+        uses: elsevier-health/hm-platform-actions/kics@v0
+        with:
+          path: "./infrastructure"
+          output_path: "results-dir"
+          exclude_paths: "terraform/gcp/big_data.tf,terraform/azure"
