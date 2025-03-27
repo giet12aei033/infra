@@ -15,7 +15,7 @@ provider "aws" {
 
 
 resource "aws_iam_role" "example_role" {
-  name = "example-role"
+  name = "test3-role"
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
     Statement = [
