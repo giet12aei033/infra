@@ -13,6 +13,6 @@ jobs:
       - name: Run KICS Scan and Upload SARIF
         uses: elsevier-health/hm-platform-actions/kics@v0
         with:
-          path: "./infrastructure"
+          path: "./terraform"
           output_path: "results-dir"
           exclude_paths: "terraform/gcp/big_data.tf,terraform/azure"
