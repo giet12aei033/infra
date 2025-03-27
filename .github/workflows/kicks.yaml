@@ -2,6 +2,9 @@ name: Test KICS action PR comment
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   kics-job:
