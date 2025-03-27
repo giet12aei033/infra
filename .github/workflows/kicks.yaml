@@ -32,12 +32,12 @@ jobs:
           path: "./terraform"
           ignore_on_exit: results
           output_path: results-dir
-          platform_type: terraform
-          output_formats: "json,sarif"
+          #platform_type: terraform
+          #output_formats: "json,sarif"
           token: "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"
-          exclude_paths: "terraform/gcp/big_data.tf,terraform/azure"
+          #exclude_paths: "terraform/gcp/big_data.tf,terraform/azure"
           # seek query id in it's metadata.json
-          exclude_queries: 0437633b-daa6-4bbc-8526-c0d2443b946e
+          #exclude_queries: 0437633b-daa6-4bbc-8526-c0d2443b946e
           enable_comments: true
 
       - name: Show results
