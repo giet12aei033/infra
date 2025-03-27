@@ -1,3 +1,8 @@
+name: Test KICS action PR comment
+
+on:
+  workflow_dispatch:
+
 jobs:
   kics-job:
    runs-on: ubuntu:latest
