@@ -13,7 +13,6 @@ provider "aws" {
   region = "us-east-1"
 }
 
-
 resource "aws_iam_role" "example_role" {
   name = "test5-role"
   assume_role_policy = jsonencode({
